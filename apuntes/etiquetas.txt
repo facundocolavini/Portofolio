@@ -1,0 +1,33 @@
+Las etiquetas son la representación básica de la información en un documento html. Sirven para crear y organizar el contenido.
+La sintaxis general de una etiqueta es:
+
+<nombre>contenido</nombre>
+Hay ciertas etiquetas que tienen una sintaxis diferente, ya que se cierran en sí mismas; es decir, no tienen etiqueta de cierre:
+
+<nombre />
+Algunas de las etiquetas más conocidas y usadas son:
+
+Etiquetas de cabecera (head):
+
+doctype: indica al navegador el tipo de documento que se está mostrando.
+html: es la etiqueta que envuelve todo el documento
+head: es la cabecera del documento y contiene sub etiquetas que describen al documento o incluyen recursos adicionales.
+Etiquetas del cuerpo del documento (body):
+
+article: diferencia partes del contenido que pueden vivir por sí mismas.
+nav: para hacer menús de navegación.
+aside: contenido menos relevante, como publicidad, etc.
+section: sirve para diferenciar las secciones principales del contenido.
+header: cabecera del documento.
+footer: pie de página del documento.
+h1 - h6: títulos de nuestro sitio web.
+table: tablas de contenidos, similar a la estructura de las hojas de calculo.
+ul y ol: listas de items.
+div: cualquier división para organizar el contenido.
+title: Define el título del documento, el cual se muestra en la barra de título del navegador o en las pestañas de página. Solamente puede contener texto y cualquier otra etiqueta contenida no será interpretada.
+link: Usada para enlazar JavaScript y CSS externos con el documento HTML actual.
+meta: Define los metadatos que no pueden ser definidos usando otro elemento HTML.
+style: Etiqueta de estilo usada para escribir CSS en línea.
+script: Define ya sea un script interno o un enlace hacia un script externo. El lenguaje de programación es JavaScript
+
+Una etiqueta es usada para crear contenido

@@ -1,0 +1,34 @@
+La propiedad de css que nos permite definir la forma en que se alinearán o distribuirán 
+los hijos de un elemento al que se le ha asignado un 
+display flex es: justify-content. Y puede tomar entre otros valores, los siguientes:
+
+flex-start: para alinear todos los elementos hacia el inicio del espacio disponible.
+flex-end: para alinear todos los elementos hacia el final, a la derecha.
+center: para alinear todos los elementos al centro del espacio disponible.
+space-between: para distribuir los elementos con un espacio proporcional e igual entre ellos.
+space-evenly: para distribuir los elementos con un espacio proporcional e igual entre ellos (incluyendo el primer y último elementos con respecto a los extremos del espacio disponible).
+space-around: similar a space-evenly pero tanto en el primero como en el último elemento, el espacio hacia los extremos es la mitad del espacio usado entre los elementos.
+
+¿Para que sirve justificar-content? y ¿Cuales son sus valores más usados?
+ 
+¿Para qué sirve justificar-content?
+Sirve para definir la alineación o distribución de los hijos de un elemento padre que tenga display flex
+Aquí te presento las principales valores más usados en el desarrollo web para que los aproveches al máximo:
+
+flex-start: Sirve para alinear todos los elementos juntos hacia el lado del inicio del espacio disponible, a la izquierda.
+flex-start.png
+
+flex-end: Sirve para alinear todos los elementos juntos hacia el final del espacio disponible, a la derecha.
+flex-end.png
+
+center: Sirve para alinear todos los elementos juntos al centro del espacio disponible.
+center.png
+
+space-between: Sirve para distribuir los elementos con un espacio proporcional e igual entre ellos. Excepto el lado izquierdo del primer elemento y el lado derecho del ultimo elemento.
+space-between.png
+
+space-evenly: Sirve para distribuir los elementos con el mismo espacio proporcional entre ellos (incluyendo el primer y último elementos con respecto a los extremos del espacio disponible).
+space-evenly.png
+
+space-around: Funciona parecido a space-evenly. la diferencia radica en el espacio interno del primer elemento y en el espacio derecho del último elemento, estos espacios son la mitad del espacio usado entre los elementos del interior.
+space-arround.png

@@ -1,0 +1,21 @@
+Hay tres opciones para incluir estilos que definan la apariencia de tu html:
+
+Estilos en línea: se definen directamente en el elemento html que quieres estilizar, se agregan con el atributo style.Y tienen mas importancia que poner un estilo por tag.
+ Ej: <header style="color:red ;background:blue;"></header>
+
+Estilos con el tag Style: regularmente este tag se incluye dentro de la etiqueta head del html.Esta tiene mas importancia que link pero menor que el modo de estilo en linea.
+ <style>
+     header{
+         background: green;
+        }
+</style> 
+
+Estilos enlazados desde un archivo css externo: utilizando la etiqueta link que nos permite enlazar recursos externos.Si se le pone un !important al archivo de este estilo 
+adquiere mas importancia que el tipo tag  pero no se recomienda poner el importan por que rompe la cascada de estilos
+    <link rel="stylesheet" href="css/estilos.css">
+
+A CSS, se le llama hojas de estilos en cascada porque los estilos que se definen para una página, se van aplicando de 
+arriba hacia abajo, y de lo más general a lo más particular, teniendo prioridad lo más particular. 
+Esto es, los estilos que prevalecen son los que han sido definidos en línea, luego los que fueron definidos mediante la etiqueta style en la cabeza o cuerpo del html, y por último
+ los estilos definidos en archivos externos enlazados con la etiqueta link. 
+Esta prioridad se puede alterar al usar el modificador **!important"" en la definición de algún estilo en particular, aunque esto no es recomendado.

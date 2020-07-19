@@ -1,0 +1,8 @@
+En esta clase aplicaremos a nuestro proyecto los estilos necesarios para que la sección principal 
+o hero de nuestro portafolio se vea correctamente. También completaremos la información de nuestro footer
+ y le aplicaremos los respectivos estilos.
+
+En esta clase vemos que además de las propiedades relacionadas con display:flex, 
+en lo que se refiere a la alineación de elementos internos, existen también propiedades 
+equivalentes que nos permite alinear textos dentro de un contenedor, 
+estas propiedades son: text-align y vertical-align.

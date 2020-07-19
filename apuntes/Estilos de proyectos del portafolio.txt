@@ -1,0 +1,4 @@
+En esta clase le damos estilos a los elementos html de la sección de proyectos en nuestro portafolio. 
+Aplicaremos, entre otras cosas, la propiedad text-transform con uppercase para 
+convertir algunos títulos a mayúsculas sostenidas.
+

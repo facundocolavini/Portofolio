@@ -1,0 +1,5 @@
+Para ir a una ruta externa que es local dentro de mi proyecto
+<a href ="./portafolio/index.html">Portafolio</a><!--Enlace-->
+
+A enlaces externos de la web 
+ <a href="http://www.oikoss.com/new/index.php">Ver pagina de oikoss</a>

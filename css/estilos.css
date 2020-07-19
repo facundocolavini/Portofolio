@@ -1,0 +1,460 @@
+/* 
+Reglas:Esta compuesta por Reglas ,Selectores,Propiedades y valores
+header{
+    background: red;
+}
+Selectores: Como identificamos algun elemento html
+header
+Declaraciones:Son acerca de todo lo que a hacemos con ese selector
+{
+    background: red;
+}
+Propiedades:Son esas cosas particulares que hacemos con esos elementos
+background:
+
+Valores: Son esas cosas que esperan recibir como variables las propiedades
+ para actuar de forma correcta.
+ red;
+*/
+/*
+
+header{
+    background: red;
+    color:red
+
+    rgb(0,255,0)
+    rgba(255,255,0)
+    hsl(blue, saturation, lightness)
+    hsla(hue, saturation, lightness, alpha)
+    #FF0000
+    #00ff00
+    #0000ff
+}*/
+
+
+/* Selectores basicos
+selector de etiqueta header - section - article - nav */
+
+/* Selector descendente (hijos) :Es un elemento hijo de algun otro elemento  */
+/* body header div nav ol li a {
+
+} */
+
+/* Selector de Clase y id:indeterminate : Nos va ayudar a no hacer un selector decendente tan encadenado y largo */
+/*class:Muchas elementos pueden recibir el mismo estilo utilizando class osea el mismo nombre de la clase en el atributo de la etiqueta html.
+id:A diferencia de class.Si quisiera hacer 2 estilos iguales a distintas etiquetas Html no se podria poner el mismo nombre de id en distintas etiquetas
+Se utilizan las clases para cuando quiero un estilo particular para distintas etiquetas.
+Etiquetas o tags se repiten y pueden afectar a otras etiquetas pero si quiero usarla para varios tags sirve 
+*/
+
+/*Selector de clase*/
+/*.link*/
+
+/*Selector de id*/
+/* 
+#portafolio
+ */
+
+ /*Los navegadores incluyen estilos predeterminados para cada elemento html. 
+ Esto significa que aún cuando no hayas definido o asignado ningún estilo a tus 
+ etiquetas, éstas tendrán una apariencia particular que es muy similar en todos los 
+ navegadores, aunque no necesariamente idéntica.
+ User agent stylesheet es el navegador  
+ Pone los estilos como le place son similares pero cambian en distintos OS.
+ */
+
+ /*
+ Herencia 
+ Como body es una etiqueta padre heredara este tipo de fuente 
+ a sus hijos osea que me cambiaria el texto de toda la web almenos
+  que haya otro elemento con otra fuente asignada*/
+ 
+ body{
+    font-family: 'Source Sans Pro',sans-serif; /*Tipo de fuente*/
+    margin:0;
+ }
+
+ /*Si una fuente tiene mas de 2 palabras se lo anota con '' */
+
+ /*Fuentes que no estan instaladas:
+ -Subir el archivo de la fuente a nuetro website y crear un tipo de letra
+ -Tambien usar un servicio que nos proveea de esas fuentes google fonts.
+ */
+
+ /*Aplico la propiedad a 6 selectores diferentes
+  en este caso a todos los h1 al h6*/
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6{
+    font-family: 'Fjalla One',sans-serif;
+    font-weight: normal;/*grpsor de fuente multiplos de 100 bold = 600*/
+    /*font-style: italic; cambia el tipo de fuente*/
+ }
+
+
+
+ h1{
+     /*Texto*/
+     /*1 =100% .5= 50%*/
+    font-size: 40px;/*tamaño de fuente*/
+    line-height: 1.5em; /*tamaño de fuente*/
+    letter-spacing: -.2px;/*es un 20% menos de un pixel por eso negativo*/
+    color: white; /*color a los textos*/
+    /*text-transform:uppercase ;transforma la fuente*/
+    /*text-decoration: underline; decora el texto*/
+   
+    /*Margenes*/
+    /*margin: top right bottom left; Orden*/
+    margin:0;
+    /*tambien modificar en etiquetas fijas de ancho  tiene que tener display block
+    margin: top bottom
+    margin: auto alinea el contenido al centro
+
+    */
+ }
+
+
+ h1 strong{
+    color: #026fff;
+ }
+
+ h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro',sans-serif; 
+    font-weight: bold; /*Fuente en negrita*/
+    font-size:24px;
+    margin-bottom: 40px;
+ }
+
+
+.hero{
+    height:300px;
+    /*background-image:url('../images/hero.jpg');/*Asigna una imagen de color de fondo*/
+    /*background-size: 500px 300px;/*Ajusto el tamaño de la imagen de fondo*/
+    /*background-repeat:no-repeat;/*Para que no se repita la imagen de fondo*/
+    /*background-position-x: right; /*Para cambiar la posiciones*/
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image{
+    object-fit:cover;
+}
+
+.portfolio{
+    background: #fafafa;/*gris claro*/
+    padding: 20px;
+
+}
+.project{
+    /*bordes*/
+    /*bordes: tamaño tipo estilo 
+    border-top: 10px solid red ; 
+    border-right: 10px solid green ;
+    border-left: 10px solid orange ;
+    border-left: 10px solid pink ; 
+    */
+    /*Un solo color para un borde*/
+    /*border-color:red;*/
+    /*color:blue*/
+    /*solo para el borde de arriba cambia el color y tamaño y tipo
+    border-top-color: red; 
+    border-top-width: 15px;
+    border-top-style: solid;
+     */
+     /*Asigna un borde arriba abajo derecha e izquierda*/
+     border: 1px solid gray;
+     border-radius:10px; /*borde redondeado*/
+     /*cambio el redondeado de una esquina*/
+     border-top-left-radius:50px;
+     border-top-right-radius:50px;
+     border-bottom-left-radius:50px;
+     border-bottom-right-radius:50px;
+    /*
+    border-width: 15px;
+    border-style: solid;
+    */
+    /*Tipos de bordes*/
+    /*
+    solid el mas usado
+    dashed
+    dotted
+    double
+    groove
+    etc
+    */
+ 
+    /*Margenes*/
+    /*margin:10px;*/
+    margin-bottom:15px;
+   /*  margin-right: 0%;
+    margin-left: ;
+    margin-top:; */
+    padding:20px; 
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+
+}
+ .project-details{
+    width: 500px;
+    
+ }
+.project-title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+
+ .project-imageContainer{
+     width: 500px;
+ }
+
+ .project-course,
+ .project-date,
+ .project-url{
+    margin:10px 0;
+    
+
+ }
+ .project-course{
+    font-size: 15px;
+ }
+
+ .project-description{
+     font-size: 18px;
+ }
+
+ .project strong{
+    font-family: 'Fjalla One',sans-serif;
+ }
+
+ .header{
+    background-color: #1b2127; /*gris oscuro*/
+    color:white ;/*color a los textos*/
+    display:flex;/*Para que los hijos figure y nav se alinien en  forma horizontal*/
+    height: 90px;/*Esta altura se la van a poder heredar los hijos de header con inherit*/
+    align-items: center;
+    justify-content: space-between;/*mandar cada elemento hijo del header a un extremo contrario figure izq y nav a la derecha*/
+    
+  
+}
+
+ /*Selector descendente*/
+
+ .menu{/* .menu hereda de .header */
+    height: inherit;
+}
+.header ol{/* .header ol hereda de .menu */
+    display:flex;
+    height: inherit;
+}
+
+.header ol li { /* .header ol li hereda de .header ol */
+    height: inherit;
+  }
+
+  .header a { /* .header a hereda de .header ol li */
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; /*propiedad del padre que actua junto a flex-shrink para distribuir horizontalmente los elementos*/
+    flex-wrap: wrap;
+} 
+
+.box{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid red;
+    flex-shrink: 0 ; /*0 encogible 1 100% encogible es una propiedad para los hijos que tienen padre*/
+}
+
+ol,
+ul {/*Saco el estilo predefinido de la lista del menu de navegacion*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {/*Saco margen del header*/
+    margin: 0;
+  }
+
+.footer{
+    color:white;
+    background-color: #1b2127;
+    font-family: 'Fjalla One',sans-serif;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+}
+
+.footer img{
+    vertical-align: middle;
+    padding: 6px;
+  
+}
+
+.footer a{
+    color:white;
+  
+}
+
+.project-imageContainer{
+    width: 300px;
+    height:300px;
+    padding-right: 230px;
+}
+
+.experience-list{
+    display:flex;
+    flex-wrap:wrap ;
+}
+
+.experience-list-title{
+    margin-left: 10px;
+}
+.work{
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow:hidden;/*Es para generar scroll oculta cosas*/
+    background:#f4fbff;
+}
+
+.work img{
+    width:480px;
+    height:200px;
+    object-fit: cover;/*Usar para cuando se desproporsione la imagen*/
+}
+
+.work-title{
+    font-size: 26px;
+    font-weight: bold;
+}
+.experience-detail{
+   
+    margin: 20px 40px;
+    margin-top:-40px;
+    background-color: white;
+    position: relative;/*Posicion relativa superpone un elemento encima de otro*/
+    padding: 20px;
+    text-align:center;/*alinear texto a la derecho o izquierda*/
+}
+
+.work-description{
+    text-align: left;
+}
+
+.work-url{
+    color: #056fff;
+    border:1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact{
+    background-color: #056fff;
+    color: white;
+    height:150px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.social{
+
+}
+
+.social-link {
+    display:inline-block;
+    width: 50px;
+    height:50px;
+    margin:0 10px;
+    background-size: 50px 50px;
+}
+
+ 
+.social-link.facebook{
+    background-image: url('..//images/facebook-logo.png');
+    background-image:#1b2127 ;
+}
+
+.social-link.github{
+    background-image: url('..//images/github-logo.png');
+    background-image:#1b2127 ;
+}
+
+.social-link.instagram{
+    background-image: url('..//images/instagram-logo.png');
+    background-image:#1b2127 ;
+}
+
+.social-link.linkedin{
+    background-image: url('..//images/linkedin-logo.png');
+
+    background-image:#1b2127 ;
+}
+
+.form-email input{
+    border-color: gray;
+    border-style: solid;
+    padding:10px 20px 10px 25px;
+    border-radius:5px ;
+    background-image: url('..//images/correo.png');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button{
+    display:block;
+    background:transparent;
+    color:white; 
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top:10px;
+
+}
+
+.form-email h3{
+    font-family: 'Source Sans Pro',sans-serif; 
+}
+
+.container{
+    /*border:1px solid red; para ver los div las cajas*/
+    width: 1000px;
+    margin:0 auto;
+    display:inherit;
+    justify-content:inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}

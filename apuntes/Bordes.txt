@@ -1,0 +1,7 @@
+Todos los elementos html admiten la propiedad de css border, que define la 
+apariencia que tendrá el contorno del componente.
+El borde puede ser de muchos estilos, y al igual que las propiedades margin y
+ padding que aprenderás más adelante, a los bordes se les puede colocar estilos tanto de forma general con la propiedad border, como de acuerdo al lado del elemento que se indique: border-top, border-right, border-bottom y border-left.
+
+Con la propiedad boder-radius se define el redondeado de 
+las esquinas de los bordes.
